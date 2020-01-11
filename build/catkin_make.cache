@@ -1,0 +1,2 @@
+exploration_node:jackal/jackal_control:jackal/jackal_description:jackal/jackal_desktop:jackal/jackal_gazebo:jackal/jackal_msgs:jackal/jackal_navigation:jackal/jackal_simulator:jackal/jackal_tutorials:jackal/jackal_viz:mrpt_slam/mrpt_icp_slam_2d:point_cloud_converter
+-DCATKIN_DEVEL_PREFIX=/home/atul/Spatial-cognitive-exploration-algorithm/devel -DCMAKE_INSTALL_PREFIX=/home/atul/Spatial-cognitive-exploration-algorithm/install -G Unix Makefiles
