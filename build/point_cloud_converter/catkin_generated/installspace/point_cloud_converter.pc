@@ -1,8 +1,0 @@
-prefix=/home/atul/Spatial-cognitive-exploration-algorithm/install
-
-Name: point_cloud_converter
-Description: Description of point_cloud_converter
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/atul/Spatial-cognitive-exploration-algorithm/install/lib 
-Requires: 

@@ -1,8 +1,0 @@
-prefix=/home/atul/Spatial-cognitive-exploration-algorithm/install
-
-Name: jackal_navigation
-Description: Description of jackal_navigation
-Version: 0.6.1
-Cflags: 
-Libs: -L/home/atul/Spatial-cognitive-exploration-algorithm/install/lib 
-Requires: 

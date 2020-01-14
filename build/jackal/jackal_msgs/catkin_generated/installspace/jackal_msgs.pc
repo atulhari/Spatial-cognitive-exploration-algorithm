@@ -1,8 +1,0 @@
-prefix=/home/atul/Spatial-cognitive-exploration-algorithm/install
-
-Name: jackal_msgs
-Description: Description of jackal_msgs
-Version: 0.6.2
-Cflags: -I/home/atul/Spatial-cognitive-exploration-algorithm/install/include
-Libs: -L/home/atul/Spatial-cognitive-exploration-algorithm/install/lib 
-Requires: std_msgs message_runtime

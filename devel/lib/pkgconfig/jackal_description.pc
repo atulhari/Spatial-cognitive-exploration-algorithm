@@ -1,8 +1,0 @@
-prefix=/home/atul/Spatial-cognitive-exploration-algorithm/devel
-
-Name: jackal_description
-Description: Description of jackal_description
-Version: 0.6.2
-Cflags: 
-Libs: -L/home/atul/Spatial-cognitive-exploration-algorithm/devel/lib 
-Requires: 
