@@ -4,4 +4,7 @@
   <include file="$(find mrpt_icp_slam_2d)/launch/icp_slam.launch"/>
   <include file="$(find jackal_navigation)/launch/include/move_base.launch"/>
   <include file="$(find point_cloud_converter)/launch/point_cloud_converter.launch"/>
+  <node name="map_launcher_gp" pkg="exploration_node" type="map_launcher_gp.py" output="screen" launch-prefix="bash -c 'sleep 0.2;' "/>
+  <node name="trajectory" pkg="exploration_node" type="trajectory.py" output="screen" launch-prefix="bash -c 'sleep 0.2;' "/>
+
 </launch>

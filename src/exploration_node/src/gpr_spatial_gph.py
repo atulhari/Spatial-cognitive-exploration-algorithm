@@ -5,7 +5,6 @@ import matplotlib
 import numpy as np
 from shapely.geometry import Polygon, Point
 from shapely import speedups
-from polygon_Mapper import polygonMapper
 from scipy.spatial import KDTree, distance
 import random
 import numpy as np
