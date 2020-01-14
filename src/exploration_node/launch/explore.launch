@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+  <include file="$(find jackal_gazebo)/launch/jackal_world.launch"/>
+  <include file="$(find mrpt_icp_slam_2d)/launch/icp_slam.launch"/>
+  <include file="$(find jackal_navigation)/launch/include/move_base.launch"/>
+  <include file="$(find point_cloud_converter)/launch/point_cloud_converter.launch"/>
+  
+  <!--node name="map_launcher_gp" pkg="exploration_node" type="map_launcher_gp.py" output="screen"/-->
+  <!--node name="trajectory" pkg="exploration_node" type="trajectory.py" output="screen"/>
+  <node name="explore_gp" pkg="exploration_node" type="explore_gp.py" output="screen"/-->
+  
+</launch>

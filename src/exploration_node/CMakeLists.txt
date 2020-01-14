@@ -131,7 +131,9 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/exploration_node_node.cpp)
+#add_executable(${PROJECT_NAME}_node src/map_launcher_gp.py
+#				    src/explore_gp.py
+#				    src/trajectory.py)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the

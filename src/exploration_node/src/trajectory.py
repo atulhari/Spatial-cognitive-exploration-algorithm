@@ -1,10 +1,9 @@
 #!/usr/bin/env python
 
 import rospy
-from nav_msgs.msg import Odometry, Path
-from std_msgs.msg import String,Int32,Int32MultiArray,MultiArrayLayout,MultiArrayDimension
+from nav_msgs.msg import Path
 from geometry_msgs.msg import PoseStamped
-from scipy.spatial import KDTree, cKDTree,distance
+from scipy.spatial import distance
 from visualization_msgs.msg import MarkerArray,Marker
 
 
@@ -14,19 +13,8 @@ c_small_samples = [0.9,0.67,0.0]
 s_small_samples = [0.3,0.3,0.3]
 class OdomToPath:
     def __init__(self):
-        # self.path_pub = rospy.Publisher('/path', Path, latch=True, queue_size=10)
-
-        # self.odom_sub = rospy.Subscriber('/robot_pose', PoseStamped, self.odom_cb, queue_size=1)
         self.tr_pub = rospy.Publisher('trajectory_node', MarkerArray, queue_size=10)
         self.path = Path()
-
-    # def odom_cb(self, msg):
-
-    #     cur_posex = msg.pose.position.x
-    #     cur_posey = msg.pose.position.y
-    #     self.current_position = (cur_posex,cur_posey)
-
-
     def publishMarker(self,msg,c,s):
             count = 0
             MARKERS_MAX = 100
@@ -37,7 +25,7 @@ class OdomToPath:
                 markers = Marker()
                 markers.header.frame_id = '/map'
                 markers.header.stamp = rospy.Time.now()
-                markers.ns = "frontier_segment"
+                markers.ns = "trajectory_segment"
                 markers.action = markers.ADD
                 markers.type = markers.SPHERE
                 # markers.id = 0
@@ -59,9 +47,6 @@ class OdomToPath:
 
             if(count > MARKERS_MAX):
                 markerArray.markers.pop(0)
-
-            # markerArray.markers.append(markers)
-                # Renumber the marker IDs
             id = 0
 
             for m in markerArray.markers:
@@ -77,21 +62,16 @@ class OdomToPath:
 
         while not rospy.is_shutdown():
             msg = rospy.wait_for_message("/robot_pose",PoseStamped)
-            
-        # self.path.header = msg.header
             self.current_position = (msg.pose.position.x,msg.pose.position.y)
-            # print self.current_position
             self.trajectory.append(self.current_position)
             self.path_length = distance.euclidean(self.current_position,trajectory_node)
             if distance.euclidean(self.current_position,trajectory_node)>trajectory_resolution:
                 self.trajectory.append(self.current_position)
                 trajectory_node = self.current_position
                 self.total_path +=self.path_length  
-            # self.path.poses.append(cur_pose)
             if len(self.trajectory)>1:
                 trajectory_node_marker = self.publishMarker(self.trajectory,c_samples,s_samples)
                 self.tr_pub.publish(trajectory_node_marker)
-                # pub.publish(self.trajectory)
             rospy.sleep(2)
             rospy.loginfo("Trajectory length: %s",self.total_path)
         rospy.spin()

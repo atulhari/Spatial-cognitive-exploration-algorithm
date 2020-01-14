@@ -1,10 +1,12 @@
-from nav_msgs.msg import Odometry
-from geometry_msgs.msg import PoseStamped, Point, PolygonStamped, Point32
+#!/usr/bin/env python
+
+# from nav_msgs.msg import Odometry
+from geometry_msgs.msg import Point, PolygonStamped, Point32
 import matplotlib.pyplot as plt
 import matplotlib
 from visualization_msgs.msg import MarkerArray,Marker
 import numpy as np
-from math import cos,sin,ceil,fabs
+# from math import cos,sin,ceil
 import rospy
 from sensor_msgs.msg import LaserScan, PointCloud2
 import sensor_msgs.point_cloud2 as pc2
@@ -13,13 +15,11 @@ from shapely.ops import cascaded_union
 from shapely import speedups
 from simplification.cutil import simplify_coords, simplify_coords_vw
 from std_msgs.msg import String
-from rospy.numpy_msg import numpy_msg
-from rospy_tutorials.msg import Floats
 from scipy.spatial import KDTree, cKDTree,distance
 
-from nav_msgs.msg import OccupancyGrid
-import cv2
-from copy import copy
+# from nav_msgs.msg import OccupancyGrid
+# import cv2
+# from copy import copy
 
 
 speedups.enable()
@@ -32,21 +32,17 @@ poly_buffer_ = -0.25 # Buffer applied on new polygon
 poly_init_buffer_ = -0.25 #Buffer applied on initial polygon: -0.008 
 min_voxel_width_ = 0.8 # min width of the frontier that should be detected
 simplification_factor = 0.04 # How much sparse the PCL should be | Line simplicfication
-mapData = OccupancyGrid()
+# mapData = OccupancyGrid()
 
 
 
 class polygonMapper(object):
 	def __init__(self):
-		self.map2  = OccupancyGrid()
+		# self.map2  = OccupancyGrid()
 		self.sub_scan_map = rospy.Subscriber('/PointCloud2Map', PointCloud2, self.callBackPcl, queue_size=100)
 		self.poly_pub = rospy.Publisher("polygon_map", PolygonStamped, queue_size=50)
 		self.frontier_pub = rospy.Publisher('frontier_segment', MarkerArray, queue_size=10)
 		self.status_pub = rospy.Publisher('map_status', String, queue_size=10)
-		# self.map2 = rospy.Subscriber('/map', OccupancyGrid, self.callBackMap, queue_size=100)
-		# self.global_frontier_pub =  rospy.Publisher('global_frontiers', numpy_msg(Floats))
-		# rospy.loginfo_throttle(60, "Polygon mapper initiated")
-
 
 
 
@@ -59,51 +55,16 @@ class polygonMapper(object):
 		
 		return cascaded_union([geom if geom.is_valid else geom.buffer(0.0) for geom in geoms])
 
-	def frontierDetector(self,(mx,my)):
-
-		dist_points_up = 0.0 # initializing upwash distance 
-		dist_points_down = 0.0 #initializing downwash distance
-		frontiers = []
-		for frontier_points in range(0,(len(mx)-1)):
-			if frontier_points > 0:
-				dist_points_up = np.absolute(Point(mx[frontier_points-1],my[frontier_points-1]).distance(Point(mx[frontier_points],my[frontier_points])))
-			
-			if frontier_points < (len(mx)-1):
-				dist_points_down = np.absolute(Point(mx[frontier_points],my[frontier_points]).distance(Point(mx[frontier_points+1],my[frontier_points+1])))
-			
-				if dist_points_down > min_voxel_width_ or dist_points_up > min_voxel_width_:
-					frontiers.append((mx[frontier_points],my[frontier_points]))
-		return frontiers
-
-
-	def nearestPointToQuery(self,data,query_point,r_):
-		# print data
-		T = KDTree(data)
-		idx = T.query_ball_point(query_point,r=r_)
-		return idx
-		# return [data[i] for i in idx][1:-1]
-
-
-	def globalFrontiers(self):
-		frontier_mids = []
-		index = 1
-		gl_frontiers = self.frontierDetector((self.updated_map.exterior.xy))
-		global_frontiers = gl_frontiers
-		return global_frontiers
 
 	def extractPoints(self,point,bool):
 
-		tolerance = (len(self.map_points)*0.008)
+		# tolerance = (len(self.map_points)*0.008)
 		self.mapxy = [(points[0],points[1]) for points in self.map_points ]
 		rospy.loginfo("Incoming points from the cloud: %s", len(self.mapxy))
 		simplified = simplify_coords(np.vstack(self.mapxy),simplification_factor)
 		return simplified
 
 
-	# def mapProcessor(self,do):
-	# 	run_init = do
-	# 	self.scanToPolygonConvertor(run_init)
-	# 	return self.updated_map,self.global_frontiers
 
 	def rgb(self,minimum, maximum, value):
 		minimum, maximum = float(minimum), float(maximum)
@@ -176,7 +137,7 @@ class polygonMapper(object):
 			run_init = False
 		self.updated_map = []
 
-		for loop in range(0,3) : #and poly_init.area - current_area_ > 0.2:
+		for loop in range(0,1) : #and poly_init.area - current_area_ > 0.2:
 			points_xy = self.extractPoints(self.map_points,True)	
 			poly = Polygon(points_xy).buffer(poly_buffer_)
 	

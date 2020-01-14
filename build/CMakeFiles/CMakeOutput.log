@@ -28,28 +28,28 @@ The CXX compiler identification is GNU, found in "/home/atul/Spatial-cognitive-e
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_904ca/fast"
-/usr/bin/make -f CMakeFiles/cmTC_904ca.dir/build.make CMakeFiles/cmTC_904ca.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_90877/fast"
+/usr/bin/make -f CMakeFiles/cmTC_90877.dir/build.make CMakeFiles/cmTC_90877.dir/build
 make[1]: Entering directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_904ca.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_904ca.dir/testCCompiler.c.o   -c /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_904ca
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_904ca.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_904ca.dir/testCCompiler.c.o  -o cmTC_904ca 
+Building C object CMakeFiles/cmTC_90877.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_90877.dir/testCCompiler.c.o   -c /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_90877
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90877.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_90877.dir/testCCompiler.c.o  -o cmTC_90877 
 make[1]: Leaving directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_68d1c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_68d1c.dir/build.make CMakeFiles/cmTC_68d1c.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_8ecd9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8ecd9.dir/build.make CMakeFiles/cmTC_8ecd9.dir/build
 make[1]: Entering directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_68d1c.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_68d1c.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.12/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_68d1c
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68d1c.dir/link.txt --verbose=1
-/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_68d1c.dir/CMakeCCompilerABI.c.o  -o cmTC_68d1c 
+Building C object CMakeFiles/cmTC_8ecd9.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_8ecd9.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.12/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_8ecd9
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ecd9.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_8ecd9.dir/CMakeCCompilerABI.c.o  -o cmTC_8ecd9 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -59,8 +59,8 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.12) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_68d1c' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cct4jsGI.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_68d1c /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_68d1c.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_8ecd9' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cclSwrJs.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_8ecd9 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_8ecd9.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
 
 
@@ -68,14 +68,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_68d1c/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_68d1c.dir/build.make CMakeFiles/cmTC_68d1c.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_8ecd9/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_8ecd9.dir/build.make CMakeFiles/cmTC_8ecd9.dir/build]
   ignore line: [make[1]: Entering directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_68d1c.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_68d1c.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.12/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_68d1c]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68d1c.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_68d1c.dir/CMakeCCompilerABI.c.o  -o cmTC_68d1c ]
+  ignore line: [Building C object CMakeFiles/cmTC_8ecd9.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_8ecd9.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.12/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_8ecd9]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ecd9.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_8ecd9.dir/CMakeCCompilerABI.c.o  -o cmTC_8ecd9 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -85,13 +85,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.12) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_68d1c' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cct4jsGI.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_68d1c /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_68d1c.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_8ecd9' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cclSwrJs.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_8ecd9 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_8ecd9.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cct4jsGI.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cclSwrJs.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -109,7 +109,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_68d1c] ==> ignore
+    arg [cmTC_8ecd9] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -121,7 +121,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_68d1c.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_8ecd9.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -151,14 +151,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_99df1/fast"
-/usr/bin/make -f CMakeFiles/cmTC_99df1.dir/build.make CMakeFiles/cmTC_99df1.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_8963e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8963e.dir/build.make CMakeFiles/cmTC_8963e.dir/build
 make[1]: Entering directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_99df1.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_99df1.dir/feature_tests.c.o   -c /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_99df1
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99df1.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_99df1.dir/feature_tests.c.o  -o cmTC_99df1 
+Building C object CMakeFiles/cmTC_8963e.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_8963e.dir/feature_tests.c.o   -c /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_8963e
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8963e.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_8963e.dir/feature_tests.c.o  -o cmTC_8963e 
 make[1]: Leaving directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
 
 
@@ -171,14 +171,14 @@ make[1]: Leaving directory '/home/atul/Spatial-cognitive-exploration-algorithm/b
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_85cde/fast"
-/usr/bin/make -f CMakeFiles/cmTC_85cde.dir/build.make CMakeFiles/cmTC_85cde.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_074f2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_074f2.dir/build.make CMakeFiles/cmTC_074f2.dir/build
 make[1]: Entering directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_85cde.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_85cde.dir/feature_tests.c.o   -c /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_85cde
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85cde.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_85cde.dir/feature_tests.c.o  -o cmTC_85cde 
+Building C object CMakeFiles/cmTC_074f2.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_074f2.dir/feature_tests.c.o   -c /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_074f2
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_074f2.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_074f2.dir/feature_tests.c.o  -o cmTC_074f2 
 make[1]: Leaving directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
 
 
@@ -191,14 +191,14 @@ make[1]: Leaving directory '/home/atul/Spatial-cognitive-exploration-algorithm/b
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4bf6a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4bf6a.dir/build.make CMakeFiles/cmTC_4bf6a.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_507ac/fast"
+/usr/bin/make -f CMakeFiles/cmTC_507ac.dir/build.make CMakeFiles/cmTC_507ac.dir/build
 make[1]: Entering directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4bf6a.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_4bf6a.dir/feature_tests.c.o   -c /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_4bf6a
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4bf6a.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_4bf6a.dir/feature_tests.c.o  -o cmTC_4bf6a 
+Building C object CMakeFiles/cmTC_507ac.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_507ac.dir/feature_tests.c.o   -c /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_507ac
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_507ac.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_507ac.dir/feature_tests.c.o  -o cmTC_507ac 
 make[1]: Leaving directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
 
 
@@ -209,28 +209,28 @@ make[1]: Leaving directory '/home/atul/Spatial-cognitive-exploration-algorithm/b
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_06683/fast"
-/usr/bin/make -f CMakeFiles/cmTC_06683.dir/build.make CMakeFiles/cmTC_06683.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_f64f0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f64f0.dir/build.make CMakeFiles/cmTC_f64f0.dir/build
 make[1]: Entering directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_06683.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_06683.dir/testCXXCompiler.cxx.o -c /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_06683
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06683.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_06683.dir/testCXXCompiler.cxx.o  -o cmTC_06683 
+Building CXX object CMakeFiles/cmTC_f64f0.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_f64f0.dir/testCXXCompiler.cxx.o -c /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_f64f0
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f64f0.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_f64f0.dir/testCXXCompiler.cxx.o  -o cmTC_f64f0 
 make[1]: Leaving directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_02f50/fast"
-/usr/bin/make -f CMakeFiles/cmTC_02f50.dir/build.make CMakeFiles/cmTC_02f50.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_336c4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_336c4.dir/build.make CMakeFiles/cmTC_336c4.dir/build
 make[1]: Entering directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_02f50.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_02f50.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_02f50
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02f50.dir/link.txt --verbose=1
-/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_02f50.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_02f50 
+Building CXX object CMakeFiles/cmTC_336c4.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_336c4.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_336c4
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_336c4.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_336c4.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_336c4 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -240,8 +240,8 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.12) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_02f50' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAWUVuW.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_02f50 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_02f50.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_336c4' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccioFCXN.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_336c4 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_336c4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
 
 
@@ -249,14 +249,14 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_02f50/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_02f50.dir/build.make CMakeFiles/cmTC_02f50.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_336c4/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_336c4.dir/build.make CMakeFiles/cmTC_336c4.dir/build]
   ignore line: [make[1]: Entering directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_02f50.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_02f50.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_02f50]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02f50.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_02f50.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_02f50 ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_336c4.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_336c4.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_336c4]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_336c4.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_336c4.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_336c4 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -266,13 +266,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.12) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_02f50' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAWUVuW.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_02f50 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_02f50.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_336c4' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccioFCXN.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_336c4 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_336c4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccAWUVuW.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccioFCXN.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -290,7 +290,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_02f50] ==> ignore
+    arg [cmTC_336c4] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -302,7 +302,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_02f50.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_336c4.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -330,14 +330,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
 Change Dir: /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5bbbd/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5bbbd.dir/build.make CMakeFiles/cmTC_5bbbd.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_70b32/fast"
+/usr/bin/make -f CMakeFiles/cmTC_70b32.dir/build.make CMakeFiles/cmTC_70b32.dir/build
 make[1]: Entering directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_5bbbd.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_5bbbd.dir/feature_tests.cxx.o -c /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_5bbbd
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bbbd.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_5bbbd.dir/feature_tests.cxx.o  -o cmTC_5bbbd 
+Building CXX object CMakeFiles/cmTC_70b32.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_70b32.dir/feature_tests.cxx.o -c /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_70b32
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70b32.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_70b32.dir/feature_tests.cxx.o  -o cmTC_70b32 
 make[1]: Leaving directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
 
 
@@ -403,14 +403,14 @@ make[1]: Leaving directory '/home/atul/Spatial-cognitive-exploration-algorithm/b
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c1b9a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c1b9a.dir/build.make CMakeFiles/cmTC_c1b9a.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_39d6e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_39d6e.dir/build.make CMakeFiles/cmTC_39d6e.dir/build
 make[1]: Entering directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c1b9a.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_c1b9a.dir/feature_tests.cxx.o -c /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_c1b9a
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1b9a.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_c1b9a.dir/feature_tests.cxx.o  -o cmTC_c1b9a 
+Building CXX object CMakeFiles/cmTC_39d6e.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_39d6e.dir/feature_tests.cxx.o -c /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_39d6e
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39d6e.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_39d6e.dir/feature_tests.cxx.o  -o cmTC_39d6e 
 make[1]: Leaving directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
 
 
@@ -476,14 +476,14 @@ make[1]: Leaving directory '/home/atul/Spatial-cognitive-exploration-algorithm/b
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_783d0/fast"
-/usr/bin/make -f CMakeFiles/cmTC_783d0.dir/build.make CMakeFiles/cmTC_783d0.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_8448d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8448d.dir/build.make CMakeFiles/cmTC_8448d.dir/build
 make[1]: Entering directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_783d0.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_783d0.dir/feature_tests.cxx.o -c /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_783d0
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_783d0.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_783d0.dir/feature_tests.cxx.o  -o cmTC_783d0 
+Building CXX object CMakeFiles/cmTC_8448d.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_8448d.dir/feature_tests.cxx.o -c /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_8448d
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8448d.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_8448d.dir/feature_tests.cxx.o  -o cmTC_8448d 
 make[1]: Leaving directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
 
 
@@ -549,14 +549,14 @@ make[1]: Leaving directory '/home/atul/Spatial-cognitive-exploration-algorithm/b
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_091fa/fast"
-/usr/bin/make -f CMakeFiles/cmTC_091fa.dir/build.make CMakeFiles/cmTC_091fa.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_26f3d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_26f3d.dir/build.make CMakeFiles/cmTC_26f3d.dir/build
 make[1]: Entering directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_091fa.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_091fa.dir/feature_tests.cxx.o -c /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_091fa
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_091fa.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_091fa.dir/feature_tests.cxx.o  -o cmTC_091fa 
+Building CXX object CMakeFiles/cmTC_26f3d.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_26f3d.dir/feature_tests.cxx.o -c /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_26f3d
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26f3d.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_26f3d.dir/feature_tests.cxx.o  -o cmTC_26f3d 
 make[1]: Leaving directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
 
 
@@ -620,28 +620,28 @@ make[1]: Leaving directory '/home/atul/Spatial-cognitive-exploration-algorithm/b
 Determining if the include file pthread.h exists passed with the following output:
 Change Dir: /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f39a7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f39a7.dir/build.make CMakeFiles/cmTC_f39a7.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_5f647/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5f647.dir/build.make CMakeFiles/cmTC_5f647.dir/build
 make[1]: Entering directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f39a7.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_f39a7.dir/CheckIncludeFile.c.o   -c /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_f39a7
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f39a7.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f39a7.dir/CheckIncludeFile.c.o  -o cmTC_f39a7 
+Building C object CMakeFiles/cmTC_5f647.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_5f647.dir/CheckIncludeFile.c.o   -c /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_5f647
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f647.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_5f647.dir/CheckIncludeFile.c.o  -o cmTC_5f647 
 make[1]: Leaving directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function pthread_create exists in the pthread passed with the following output:
 Change Dir: /home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3dfac/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3dfac.dir/build.make CMakeFiles/cmTC_3dfac.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_2e8dd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2e8dd.dir/build.make CMakeFiles/cmTC_2e8dd.dir/build
 make[1]: Entering directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3dfac.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_3dfac.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.12/Modules/CheckFunctionExists.c
-Linking C executable cmTC_3dfac
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3dfac.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_3dfac.dir/CheckFunctionExists.c.o  -o cmTC_3dfac -lpthread 
+Building C object CMakeFiles/cmTC_2e8dd.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2e8dd.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.12/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2e8dd
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e8dd.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_2e8dd.dir/CheckFunctionExists.c.o  -o cmTC_2e8dd -lpthread 
 make[1]: Leaving directory '/home/atul/Spatial-cognitive-exploration-algorithm/build/CMakeFiles/CMakeTmp'
 
 

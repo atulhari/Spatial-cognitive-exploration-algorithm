@@ -11,14 +11,15 @@ from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 from actionlib_msgs.msg import *
 import numpy as np
 from shapely.geometry import Polygon, Point
-from scipy.spatial import KDTree,distance
+from scipy.spatial import KDTree, distance
 from simplification.cutil import simplify_coords
 import random
 from aco_tsp import SolveTSPUsingACO
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
 
-from gpr_spatial_gp import gprSpatial
+from gpr_spatial_gph import gprSpatial
+
 
 
 c_samples = [0.40,0.66,0.19]
@@ -30,15 +31,13 @@ s_small_samples = [0.3,0.3,0.3]
 class explore(object):
 	def __init__(self):
 
-		print "Node initiated "
+		print " Node initiated "
 		self.status_handle = rospy.Subscriber("map_status", String, self.statusCallback)
 		self.global_f_sub = rospy.Subscriber("trajectory_node",MarkerArray, self.trajectoryCallback)
 		self.path_sub = rospy.Subscriber("trajectory",Path, self.pathCallback)
 		self.poly_global_sub = rospy.Subscriber("polygon_map", PolygonStamped, self.globalPolygonCallback)
-		self.tr_pub = rospy.Publisher('frontier_mid', MarkerArray, queue_size=10)
 		self.poly_local_pub = rospy.Publisher("local_polygon_map", PolygonStamped, queue_size=50)
 		self.hs_candidate_pub = rospy.Publisher('hotspot_candidate', MarkerArray, queue_size=10)
-
 
 
 	def statusCallback(self,status_handle): # MAP AVAILABILITY
@@ -68,23 +67,51 @@ class explore(object):
 	def probMapCallback(self):
 
 		mapData = rospy.wait_for_message("/map",OccupancyGrid)
-		# rospy.loginfo("Got map!")
 		data = mapData.data
+		# rospy.loginfo("Got map!")
 		w=mapData.info.width
 		h=mapData.info.height
 		resolution=mapData.info.resolution
 		Xstartx=mapData.info.origin.position.x
 		Xstarty=mapData.info.origin.position.y
+		self.entropy = [data[i*w+j] for i in range(0,h) for j in range(0,w) if data[i*w+j]>10 and data[i*w+j]<50]
+		self.info_training_samples = [((j*resolution+ Xstartx),(i*resolution +Xstarty)) for i in range(0,h) for j in range(0,w) if data[i*w+j]>10 and data[i*w+j]<50]		
 		self.training_samples = [((j*resolution+ Xstartx),(i*resolution +Xstarty)) for i in range(0,h) for j in range(0,w) if data[i*w+j]>-1 and data[i*w+j]<50]
 
 
-
-	def publishMarker(self,msg,c,s):
+	def publishMarker(self,msg,c,s,size):
 		
 		count = 0
 		MARKERS_MAX = 100
 		markerArray = MarkerArray()
-		for p in (msg):
+		# training_samples = poly2
+		if size > 1:
+			for p in (msg):
+				
+				markers = Marker()
+				markers.header.frame_id = '/map'
+				markers.header.stamp = rospy.Time.now()
+				markers.ns = "frontier_segment"
+				markers.action = markers.ADD
+				markers.type = markers.SPHERE
+				# markers.id = 0
+
+				markers.scale.x = s[0]
+				markers.scale.y = s[1]
+				markers.scale.z = s[2]
+				#markers.scale.y = 0.1
+
+				markers.color.a = 1.0
+				markers.color.r = c[0]
+				markers.color.g = c[1]
+				markers.color.b = c[2]
+
+				markers.pose.position.x = p[0]
+				markers.pose.position.y = p[1]
+				markers.pose.position.z = 0.5
+				markerArray.markers.append(markers)
+
+		elif size ==1:
 			markers = Marker()
 			markers.header.frame_id = '/map'
 			markers.header.stamp = rospy.Time.now()
@@ -103,13 +130,15 @@ class explore(object):
 			markers.color.g = c[1]
 			markers.color.b = c[2]
 
-			markers.pose.position.x = p[0]
-			markers.pose.position.y = p[1]
+			markers.pose.position.x = msg[1,0]
+			markers.pose.position.y = msg[1,1]
 			markers.pose.position.z = 0.5
 			markerArray.markers.append(markers)
 
 		if(count > MARKERS_MAX):
 			markerArray.markers.pop(0)
+
+
 		id = 0
 
 		for m in markerArray.markers:
@@ -117,8 +146,8 @@ class explore(object):
 			id += 1
 		return markerArray
 
-
 	def sampler(self,a):
+
 		ts = []
 		sam_num = 300
 		s = np.arange(len(a))
@@ -127,6 +156,7 @@ class explore(object):
 		return ts
 
 	def startMovebase(self):
+
 		try:
 			result = self.movebase_client()
 			if result:
@@ -134,8 +164,8 @@ class explore(object):
 		except rospy.ROSInterruptException:
 			rospy.loginfo("Navigation test finished.")
 
-
 	def nearestPointToQuery(self,data,query_point):
+
 		T = KDTree(data)
 		dist,idx= T.query(query_point,1)
 		if dist > self.search_dist:
@@ -145,22 +175,26 @@ class explore(object):
 
 
 	def explorationPlanner(self):
+
 		gp = gprSpatial()
-		rospy.sleep(1)
-		self.goal_store = [self.current_position]
-		self.search_dist = 2
-		decay_rate = 0.5
+		rospy.sleep(2)
+		# goal_store = [self.current_position]
+		self.search_dist = 3
+		self.goal_list = [self.current_position]
 		while not rospy.is_shutdown():
+			# rospy.sleep(3)
 			gp = gprSpatial()
 			self.probMapCallback()
-			min_search_dist = 1.3
+			min_search_dist = 1
+
 			if self.map_status == "done":
 				t_sample = self.sampler(self.training_samples)
-				exploration_goals = gprSpatial.gpRegression(gp,t_sample,self.global_polygon)
-				goals = [(exploration_goals[i][0],exploration_goals[i][1]) for i in range(0,len(exploration_goals)) if self.global_polygon.contains(Point((exploration_goals[i][0],exploration_goals[i][1])))and self.nearestPointToQuery(self.global_trajectory,(exploration_goals[i][0],exploration_goals[i][1]))]# and self.nearestPointToQuery(self.global_trajectory,(exploration_goals[i][0],exploration_goals[i][1]))
-				hs_candidate_markers = self.publishMarker(goals,c_small_samples,s_small_samples)
+				exploration_goals = gprSpatial.gpRegression(gp,self.info_training_samples,self.entropy,t_sample,self.global_polygon)
+				global_poly = self.global_polygon.buffer(0.2)
+				goals = [(exploration_goals[i][0],exploration_goals[i][1]) for i in range(0,len(exploration_goals)) if global_poly.contains(Point((exploration_goals[i][0],exploration_goals[i][1]))) and self.nearestPointToQuery(self.goal_list,(exploration_goals[i][0],exploration_goals[i][1]))]
+				hs_candidate_markers = self.publishMarker(goals,c_small_samples,s_small_samples,size = 2)
 				self.hs_candidate_pub.publish(hs_candidate_markers)
-				# Decision making: TSP-ACO 
+				#decision making TSP-ACO
 				if len(goals)>1:
 					# Setup parameters
 					_colony_size = 10
@@ -168,7 +202,7 @@ class explore(object):
 
 					# Select mode
 					# ['ACS', 'Elitist', 'MaxMin']
-					_mode = 'Elitist'
+					_mode = 'ACS'
 					_nodes = goals
 					# Model setup and run
 					model = SolveTSPUsingACO(
@@ -183,52 +217,55 @@ class explore(object):
 
 					self.goal = _nodes[route[0]]
 					self.startMovebase()
-					self.search_dist = 2
+					self.search_dist = 1.25
 
 				elif len(goals)==1:
 				# else:
 					self.goal = goals[0]
 					self.startMovebase()
-					self.search_dist = 2
+					self.search_dist = 1.25
 
 
 				elif len(goals)==0:
-					if self.search_dist  < min_search_dist:
+					if self.search_dist < min_search_dist:
 						rospy.loginfo("EXPLORATOION COMPLETE")
 						sys.exit()
+
 					else:
-						rospy.loginfo("Decaying search radius to %f",self.search_dist)	
-						self.search_dist = self.search_dist - decay_rate
+						rospy.loginfo("Decaying search radius to %f",self.search_dist)		
+						self.search_dist = self.search_dist-0.25
+					
 				#----------------------------------MOVE_BASE_CLIENT CALL--------------------------------------#
 
 				#----------------------------------------------------------------------------------------------#
 			elif self.map_status == "waiting":
-				rospy.loginfo("MAP not available ")
+				print "MAP not available "
 	
 
 
-	def movebase_client(self):
-		state = 0
-		client = actionlib.SimpleActionClient("move_base",MoveBaseAction)
-		client.wait_for_server()
 
+
+
+
+
+	def movebase_client(self):
+		client = actionlib.SimpleActionClient("move_base",MoveBaseAction)
+		# Waits until the action server has started up and started listening for goals.
+		client.wait_for_server()
 		# Creates a new goal with the MoveBaseGoal constructor
 		goal = MoveBaseGoal()
 		goal.target_pose.header.frame_id = 'map'
 		goal.target_pose.header.stamp = rospy.Time.now()
 		goal.target_pose.pose.position.x= self.goal[0]
 		goal.target_pose.pose.position.y = self.goal[1]
-		self.goal_store.append(self.goal)
-
+		self.goal_list.append(self.goal)
 		goal.target_pose.pose.orientation.x= 0.0
 		goal.target_pose.pose.orientation.y = 0.0
 		goal.target_pose.pose.orientation.z = 0.0
 		goal.target_pose.pose.orientation.w = 1.0
 		client.send_goal(goal)
-		rospy.loginfo("Move base client status: %s",client.get_state())
 		wait = client.wait_for_result( timeout = rospy.Duration(60))
 		return wait
-
 
 
 def startExploration():
