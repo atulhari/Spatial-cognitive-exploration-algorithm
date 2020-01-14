@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from polygon_Mapper_gp import polygonMapper
 import rospy
 def start():

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <include file="$(find jackal_gazebo)/launch/jackal_world.launch"/>
+  <include file="$(find mrpt_icp_slam_2d)/launch/icp_slam.launch"/>
+  <include file="$(find jackal_navigation)/launch/include/move_base.launch"/>
+  <include file="$(find point_cloud_converter)/launch/point_cloud_converter.launch"/>
+</launch>
