@@ -58,6 +58,7 @@ $ roslaunch exploration_node iSCEAM.launch
 ```
 ## Authors
 **Atul hari**
+
 Robotics and mechatronics lab, University of Twente
 
 ## Acknowledgments
