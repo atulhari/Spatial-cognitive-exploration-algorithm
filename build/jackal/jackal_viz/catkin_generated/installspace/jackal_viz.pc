@@ -1,8 +1,0 @@
-prefix=/home/atul/Spatial-cognitive-exploration-algorithm/install
-
-Name: jackal_viz
-Description: Description of jackal_viz
-Version: 0.3.2
-Cflags: 
-Libs: -L/home/atul/Spatial-cognitive-exploration-algorithm/install/lib 
-Requires: 
