@@ -47,6 +47,7 @@ pip install -r requirements.txt.
 ### Running
 ```
 $ roslaunch exploration_node bringup.launch
+$ rosluanch polygon_mapper.launch
 ```
 For SCEAM algorithm
 ```
