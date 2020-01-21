@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-
-  <node name="explore_gp" pkg="exploration_node" type="explore_gph.py" output="screen"/>
-  
-</launch>

@@ -18,7 +18,7 @@ from aco_tsp import SolveTSPUsingACO
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
 
-from gpr_spatial_gph import gprSpatial
+from isceam_gpr import gprSpatial
 
 
 
