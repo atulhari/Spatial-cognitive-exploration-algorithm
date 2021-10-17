@@ -1,6 +1,6 @@
 # Spatial-cognitive-exploration-algorithm
 This repository contains a novel 2D exploration algorithm that automates indoor-mapping of unknown enviornment. The algorithm uses a 2D-LiDAR to locate points (viewpoints) suitable to perform scanning. The viewpoints are detetced using a Gaussian process regression model. The algorithm is designed for real-estate industry to develop VR tours and 3D reconstruction of Dutch houses.
-
+The concepts include: SLAM, Exploration, Multivariant Gaussian Distributions, Decision Making, Bio Inspiration, Path-planning  
 ### Project content
 The project contains the following packages:
 
